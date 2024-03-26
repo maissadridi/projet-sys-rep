@@ -5,8 +5,8 @@ option java_package = "grpc";
 option java_outer_classname = "MessengerProto";
 
 service Messenger {
-    rpc SendMessage(MessageRequest) returns (MessageResponse) {}
-    rpc GetMessagesForUser(UserRequest) returns (MessageList) {}
+    rpc sendMessage(MessageRequest) returns (MessageResponse) {}
+    rpc getMessagesForUser(UserRequest) returns (MessageList) {}
 }
 
 message MessageRequest {
